@@ -15,6 +15,3 @@ for ( let last in full_name ) {
     for (counter = 0; counter < full_name.length - 1; counter++){
     }
 }
-
-  //if (object.hasOwnPrope let(last)) {full_name
-//}
