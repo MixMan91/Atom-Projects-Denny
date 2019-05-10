@@ -5,4 +5,4 @@ let my_arr = [1, 2, 3, 4, 5],
     total += my_arr[i];
   }
 
-  console.log("The average of " + my_arr + " is " + total/5);
+  console.log("The average of " + my_arr + " is " + total/my_arr.length);
