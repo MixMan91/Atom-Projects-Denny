@@ -1,0 +1,184 @@
+//Experimented Learning Pi's//
+
+//First One//
+live_loop :flibble do
+  sample :ambi_choir, rate: -0.28
+  sleep 0.05
+  sample :bd_haus, rate: 1
+  sleep 1
+end
+
+//Second One//
+live_loop :guit do
+  with_fx :echo, mix: 0.08, phase: 0.30 do
+    sample :guit_em9, rate: 0.5
+  end
+  sample :guit_em9, rate: -0.5
+  sleep 8
+end
+
+live_loop :boom do
+  with_fx :reverb, room: 1 do
+    sample :bd_boom, amp: 10, rate: 1
+  end
+  sleep 8
+end
+
+//Third One "Mary Had a Little Lamb"//
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 1
+play :D
+sleep 0.5
+play :D
+sleep 0.5
+play :D
+sleep 1
+play :E
+sleep 0.5
+play :G
+sleep 0.5
+play :G
+sleep 1
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 0.4
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+
+//Forth One (Mary Had a Little Lamb with Amp added to it)//
+play :E,amp:1.5
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E,amp:1.5
+sleep 0.5
+play :E,amp:1.5
+sleep 0.5
+play :E,amp:1.5
+sleep 1
+play :D
+sleep 0.5
+play :D
+sleep 0.5
+play :D
+sleep 1
+play :E
+sleep 0.5
+play :G,amp:1.5
+sleep 0.5
+play :G,amp:1.5
+sleep 1
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 0.4
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+
+//Fifth One (Mary Had a Little Lamb with Release added)//
+play :E,amp:1.5
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E,amp:1.5
+sleep 0.5
+play :E,amp:1.5
+sleep 0.5
+play :E,amp:1.5, release:1
+sleep 1
+play :D
+sleep 0.5
+play :D
+sleep 0.5
+play :D,release:1
+sleep 1
+play :E
+sleep 0.5
+play :G,amp:1.5
+sleep 0.5
+play :G,amp:1.5, release:1
+sleep 1
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :E
+sleep 0.5
+play :E,release:1
+sleep 0.4
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :D
+sleep 0.5
+play :E
+sleep 0.5
+play :D
+sleep 0.5
+play :C,release:2
