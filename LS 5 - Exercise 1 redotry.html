@@ -25,11 +25,19 @@
     <body>
       <h1>Click the button!</h1>
 
-      <button id="press_me">Press Me!</button>
-
-      <div>.......think I need something here to display the Console.Log below......</div>
+      </body>
 
       <script language="javascript">
+        var btn = document.createElement ("BUTTON");
+        btn.innerHTML = "CLICK ME";
+        document.body.appendChild(btn);
+
+        document.addEventListener("CLICK ME", myFunction);
+
+        function myFunction () {
+          document.getElementById("BUTTON").innerHTML = "What is your name?"
+        }
+
         let person = {
           name: 'John',
           birthYr: 1991

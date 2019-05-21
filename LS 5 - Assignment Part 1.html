@@ -1,0 +1,40 @@
+<html>
+  <body>
+    <script>
+    let songs = [
+      {
+       title: "Getting Away with It (All Messed Up)",
+       artist: "James",
+       album: "Pleased to Meet You",
+       year: 2001,
+       art: "https://upload.wikimedia.org/wikipedia/en/2/2a/JamesPleasedToMeetYou.jpg"
+      },
+      {
+       title: "Renaissance Affair",
+       artist: "Hooverphonic",
+       album: "Blue Wonder Power Milk",
+       year: 1998,
+       art: "https://upload.wikimedia.org/wikipedia/en/1/17/Hooverphonic-Blue_Wonder_Power_Milk.jpg"
+      },
+      {
+       title: "White Nights",
+       artist: "Oh Land",
+       album: "Oh Land",
+       year: 2011,
+       art: "https://upload.wikimedia.org/wikipedia/en/6/68/Oh_Land_%28album%29.png"
+      }
+    ];
+    let myTitle;
+    let myImage;
+    for(let i = 0; i <songs.length;i++){
+      console.log(songs[i].title);
+      myTitle = document.createElement('div');
+      myTitle.innerText = songs [i].title;
+      document.body.appendChild(myTitle);
+      myImage = document.createElement('img');
+      myImage.src = songs [i].art;
+      document.body.appendChild(myImage);
+    }
+    </script>
+  </body>
+</html>
