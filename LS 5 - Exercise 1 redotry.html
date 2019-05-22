@@ -23,31 +23,28 @@
     </style>
   </head>
     <body>
-      <h1>Click the button!</h1>
-
+      <div id='myDiv'><span>This is the Birthday Age Exercise</span></div>
+      <h1>Choose a name from the buttons below:</h1>
+      <button id ='myButton'>My Button</button>
       </body>
 
-      <script language="javascript">
-        var btn = document.createElement ("BUTTON");
-        btn.innerHTML = "CLICK ME";
-        document.body.appendChild(btn);
-
-        document.addEventListener("CLICK ME", myFunction);
-
-        function myFunction () {
-          document.getElementById("BUTTON").innerHTML = "What is your name?"
+      <script>
+        let theDiv = document.getElementById('myDiv');
+        console.log(theDiv.innerHTML);
+        let theButton = document.getElementById('myButton');
+        theButton.addEventListener('click', function() { myFunction()});
+        function myFunction(theValue){
+          alert ('You choose ' + theValue);
         }
 
-        let person = {
-          name: 'John',
-          birthYr: 1991
-        };
+      let x = ['John', 'Jacob', 'Jeff', 'Joseph'];
+      for(let i = 0; i<x.length; i++){
+        var newButton = document.createElement ('button');
+        newButton.innerText = x[i];
+        newButton.addEventListener('click', function() { myFunction(x[i])})
+        document.body.appendChild(newButton);
+      }
 
-        person.age = 2019 - person.birthYr
-
-        console.log(
-        person.name + " is " + person.age + " years old."
-        );
       </script>
     </body>
 </html>
