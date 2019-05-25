@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googlepis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  </head>
+
+  <body>
+    <div id="firstDiv" class="paragraph">Here I am</div>
+    <div id="secondDiv" class="paragraph">rock you</div>
+    <div id="thirdDiv" class="not-paragraph">like a hurricane</div>
+
+    <button id="theIDButton">By ID</button>
+    <button id="theClassButton">By Class</button>
+    <button id="theElementButton">By Element Type</button>
+
+    <script>
+    $(document).ready(function(){
+        $("#theIDButton").click(function(){
+            $("#firstDiv").hide();
+        });
+    });
+    </script>
+  </body>
+</html>
