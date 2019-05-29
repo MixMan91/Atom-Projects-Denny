@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="weather">Weather Goes Here</div>
+
+<script>
+var nwsRequest = new XMLHttpRequest();
+nwsRequest.open('GET', 'https://api.weather.gov/stations/KBOS/observations');
+
+nwsRequest.send(null);
+
+nwsRequest.onreadystatechange = function() {
+    var DONE = 4;
+    var OK = 200;
+    if (nwsRequest.readyState === DONE){
+         if (nwsRequest.status === OK){
+              var nhsResponse = JSON.parse(nswRequest.responseText);
+              var weatherDiv = document.getElementById("weather");
+              weatherDiv.innerHTML =
+nhsResponce.features[0].properties.textDescription;
+        }
+    }
+}
+</script>
+
+</body>
+</html>
