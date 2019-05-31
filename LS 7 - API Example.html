@@ -14,10 +14,10 @@ nwsRequest.onreadystatechange = function() {
     var OK = 200;
     if (nwsRequest.readyState === DONE){
          if (nwsRequest.status === OK){
-              var nhsResponse = JSON.parse(nswRequest.responseText);
+              var nhsResponse = JSON.parse(nwsRequest.responseText);
               var weatherDiv = document.getElementById("weather");
               weatherDiv.innerHTML =
-nhsResponce.features[0].properties.textDescription;
+nhsResponse.features[0].properties.textDescription;
         }
     }
 }

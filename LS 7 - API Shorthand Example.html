@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="weather">Weather Goes Here</div>
+
+<script>
+  // The shorthand version
+  $.get(
+    "/interface/sessions/1",
+    function(result) {
+      console.log("Hello, " + result.user.name);
+    },
+    'json'
+  );
+</script>
+
+</body>
+</html>

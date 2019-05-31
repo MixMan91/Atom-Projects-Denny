@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="weather">Weather Goes Here</div>
+
+<script>
+  // With all the bells and whistles:
+  $.ajax({
+    url: "/interface/sessions/1",
+    method: 'GET',
+    dataType: 'json',
+    success: function(result) {
+      console.log("Hello, " + result.user.name);
+    },
+    error: function() {
+      console.log("Who are you?");
+    }
+  });
+</script>
+
+</body>
+</html>
