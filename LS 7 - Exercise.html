@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>API Lesson 7 Exercise</title>
+    </head>
+    <body>
+        <div id="main">
+            Something will go here
+        </div>
+     </body>
+     <script>
+
+function flickrResults(json){
+
+ var q_artist = document.getElementById("main");
+
+ q_artist.innerHTML = "<img src= '" + json.items[0].media.m + "' />" ;
+
+  console.log(json);}
+
+</script>
+
+<script
+ src='http://api.musixmatch.com/artist.search?q_artist=prodigy&page_size=5'>
+</script>
+
+</html>
