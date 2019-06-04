@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>This is a ajax exmaple API call up test.</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $.ajax({
+        url: "/api/getWeather",
+        data: {
+          zipcode: 32536
+        },
+        success: function( result ) {
+          $( "#weather-temp" ).html( "<strong>" + result + "</strong> degrees" );
+        }
+      });
+    </script>
+  </body>
+</html>
