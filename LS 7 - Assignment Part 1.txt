@@ -1,0 +1,8 @@
+ReadMe Text (Denny Project)
+
+My goal is to make a DJ Press Kit, where it will have links of what I have done.
+(1) It will a have capture section to request a DJ per a date request.
+(2) I will use the Discogs API to have people be able to search up songs they would like to hear in their mixes.
+
+To get the date request, I will have a search down method to capture a date request via the web.
+I will use the API work for me. It will mainly be to search down songs that people like to have in their mixes.
