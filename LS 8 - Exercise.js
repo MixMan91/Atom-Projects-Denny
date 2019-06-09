@@ -21,5 +21,7 @@ let myCharacter = new Character ('Yoda', 900, 'Rocketman');
 let anotherCharacter = new Character ('Luke', 23, 'We Will Rock You');
 
 myCharacter.sayMyName();
+console.log('');
 anotherCharacter.sayMyName();
+console.log('');
 myCharacter.compareAge(anotherCharacter);
