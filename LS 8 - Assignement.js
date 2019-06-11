@@ -1,5 +1,5 @@
 class myNums{
-  constructor(num1, num2, num3, num4,num5,num6){
+  constructor([num1, num2, num3, num4,num5,num6]){
     this.myNum1=num1;
     this.myNum2=num2;
     this.myNum3=num3;
@@ -16,8 +16,8 @@ class myNums{
     console.log('My first number is ' + this.myNum6 + '.');
   }
 }
-let someNums = new myNums (1, 2, 3, 4, 5, 6);
-let someNewNums = new myNums (2, 4, 6, 8, 10, 12);
+let someNums = new myNums ([1, 2, 3, 4, 5, 6]);
+let someNewNums = new myNums ([2, 4, 6, 8, 10, 12]);
 
 console.log('');
 console.log('First Set');
