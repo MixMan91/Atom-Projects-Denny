@@ -1,0 +1,173 @@
+/* CSS Document  */
+
+
+/* ..................................................................... */
+/* ...Import two Google Fonts........................................... */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald:300');
+
+
+body {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	color: #50352d;
+}
+
+h1 {
+	font-size: 3em;
+	font-family: 'Lobster', cursive;
+	margin: 0;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 2.4em;
+	margin: 50px 0 .4em 0;
+}
+
+p {
+	font-size: 1em;
+	margin: 0 0 .9em 0;	
+}
+
+a {
+	color: #be330d;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #6a871c;
+}
+
+
+
+/* header...................................... */
+
+header {
+	background: url(images/countertop.jpg) repeat-x center 0;
+	padding: 40px 30px 0 30px;
+	color: #fff;
+}
+
+header p {
+	font-size: 1.2em;
+	margin: 0;
+}
+
+header img {
+	width: 325px;
+	margin: 15px 0 -50px -11px;
+}
+
+
+
+
+
+/* article...................................... */
+
+article {
+	padding: 1px 30px 50px 30px;
+	background-color: #f4e2c6;
+}
+
+
+
+figure {
+	border-left: 4px solid #f0bf6f;
+	width: 35%;
+	text-align: center;
+	float: right;
+	margin: 0 0 20px 30px;
+	padding: 0 0 0 15px;
+}
+
+figure img {
+	width: 100%;
+	max-width: 150px;
+}
+
+figure figcaption {
+	text-align: left;
+	font-size: .9em;
+	line-height: 1.1em;
+	color: #a87d38;	
+}
+
+
+
+a.thumbnail {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+a.thumbnail img {
+	display: block;
+	width: 120px;
+	
+}
+
+a.thumbnail:hover img {
+	filter: brightness(1.2);
+}
+
+
+
+
+
+
+/* footer.................................... */
+
+footer {
+	padding: 20px 0 20px 30px;
+	border-top: 2px solid #ddd;
+	font-size: .85em;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+
+	header img {
+		width: 250px;
+		margin-bottom: -30px;
+	}
+	
+	figure {
+		float: none;
+		width: 90%;
+		margin: 10px auto 30px auto;
+		border-left: none;
+		border-top: 4px solid #f0bf6f;
+		border-bottom: 4px solid #f0bf6f;
+		padding: 15px 0;
+	}
+	
+	figure figcaption {
+		width: 80%;
+		margin: 0 auto;		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
