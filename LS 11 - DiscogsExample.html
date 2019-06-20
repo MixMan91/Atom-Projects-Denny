@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <div id="someDiv">Hello</div>
+  </body>
+  <script>
+  function discogsStuff(fred){
+    console.log(fred.data.results[0].thumb);
+    let myNewImage = document.createElement("img");
+    myNewImage.src = (fred.data.results[0].thumb);
+    let theDiv = document.getElementById("someDiv");
+    theDiv.appendChild(myNewImage);
+  }
+  </script>
+  <script src="https://api.discogs.com/database/search?q=Nirvana&token=sDegSAUclztejNsDIrhMocalyHALBpLGHUyVfPRo&callback=discogsStuff">
+
+  </script>
+</html>
