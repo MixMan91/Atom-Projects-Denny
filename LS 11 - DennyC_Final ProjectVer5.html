@@ -1,0 +1,179 @@
+<!DOCTYPE html Opening Header Set-Up with Hyperlink>
+<html align="center" lang="en">
+  <head>
+  <h1 align="center">Welcome to the World of DJ AVZO!!!</h1>
+  <h3 align="center">By Denny (DJ AVZO) Cordell</h3>
+  </head>
+    <br />
+    <br />
+      <p align="center"style="font-size:150%;">What you are about to witness is a DJ at work!</p>
+      <p align="center"style="font-size:150%;">Click <a href="https://youtu.be/gigU2gu_-BI" target="_blank"> here </a> to see my graduation perfromance at the DJ Scratch Academy!</p>
+    <body>
+    <img align="center"src="https://images.pexels.com/photos/1694900/pexels-photo-1694900.jpeg?cs=srgb&dl=black-and-white-concert-disc-jockey-1694900.jpg&fm=jp" width="1500" height="960">
+    </body>
+    </html>
+    <html>
+    <h2 align="center">Club DJing can be devised into three different sets.</h2>
+              <table align="center"style="width:100%">
+                <tr>
+                  <th>Opener Songs</th>
+                  <th>Primetime Songs</th>
+                  <th>Closing Songs</th>
+                    <style>
+                      img {
+                        float: right;
+                      }
+                    </style>
+                    <p><img src="https://images.pexels.com/photos/860707/pexels-photo-860707.jpeg?cs=srgb&dl=analogue-audio-cdj-860707.jpg&fm=jpg" alt="DJpic" style="width:150px;height:150px;margin-left:160px;">
+                    <p><img src="https://images.pexels.com/photos/2209315/pexels-photo-2209315.jpeg?cs=srgb&dl=audio-mixer-blur-close-up-2209315.jpg&fm=jpg" alt="DJpic2" style="width:150px;height:150px;margin-right:979px;">
+                  </tr>
+                <tr>
+                  <td>Cheap Thrils - Sia</td>
+                  <td>My House Flo Rida</td>
+                  <td>Familiar - Liam Payne</td>
+                </tr>
+                <tr>
+                  <td>Get Ur Freak On - Missy Elliott</td>
+                  <td>SexyBack - Justin Timberlake</td>
+                  <td>Fancy - Iggy Azalea</td>
+                </tr>
+                <tr>
+                  <td>Middle - DJ Snake ft. Bipolar Sunshine</td>
+                  <td>Treasure - Bruno Mars</td>
+                  <td>Mic Drop - BTS f.Designer</td>
+                </tr>
+              </table>
+                  <style>
+                    img {
+                      float: right;
+                    }
+                  </style>
+                  <p><img src="https://images.pexels.com/photos/270769/pexels-photo-270769.jpeg?cs=srgb&dl=analogue-audio-black-and-white-270769.jpg&fm=jpg" alt="DJpic3" style="width:150px;height:150px;margin-left:160px;">
+                  <p><img src="https://images.pexels.com/photos/1238941/pexels-photo-1238941.jpeg?cs=srgb&dl=audio-black-and-white-close-up-1238941.jpg&fm=jpg" alt="DJpic4" style="width:150px;height:150px;margin-right:979px;">
+
+    </body>
+</html>
+<!DOCTYPE html Calendar Code Set-Up>
+<style media="screen">
+  {% load staticfiles %}
+</style>
+
+<html align="center" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-organiser!</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/interactive_calendar.css' %}">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower'
+          rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="{% static 'js/interactive_calendar.js' %}"></script>
+</head>
+
+<body>
+<div class=page-header>
+   <a href="{% url 'index' %}">Utilize the Calendar to find an event date.</a>
+</div>
+
+<style media="screen">
+{% if user.is_authenticated %}
+  {% else %}
+  {% endif %}
+</style>
+
+    </ul>
+<style media="screen">
+{% block content %}
+{% endblock %}
+</style>
+
+</body>
+</html>
+<!doctype html Name-EventDate-Email Set-Up>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
+</head>
+<body>
+<p>Date: <input type="text" id="datepicker"></p>
+<form action="mailto:avzo@djavzo.com" class="form-inline">
+  <div class="form-group">
+   <label for="subscriberName">Name</label>
+   <input type="text" name="subscriberName" class="center-block form-control" placeholder="name" />
+  </div>
+
+  <div class="form-group">
+    <label for="subscriberDate">Event Date</label>
+    <input type="date" name="subscriberDate" class="center-block form-control form-subs-email" placeholder="date" />
+  </div>
+
+<div class="form-group">
+    <label for="subscriberEmail">Email</label>
+    <input type="email" name="subscriberEmail" class="center-block form-control form-subs-email" placeholder="email" />
+  </div>
+
+  <button type="submit" class="btn btn-default">Subscribe</button>
+</form>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!DOCTYPE html E-Mail Contact Link>
+<address align="center">
+Written by <a href="mailto:avzo@djavzo.com">DJ AVZO</a><br>
+Visit me at:<a href="https://www.djavzo.com/" target="_blank"> www.djavzo.com</a><br>
+</address>
+</body>
+</html>
+<!DOCTYPE html SEARCH Section>
+<html>
+    <body>
+      <input id="searchtext" type="text"></input>
+      <button id='search' onclick="mySearch()">Search</button>
+    </body>
+    <script>
+      function mySearch(){
+      let myScript = document.createElement("script");
+      myScript.src = "https://api.discogs.com/database/search?q=" + document.getElementById("searchtext").value + "&token=sDegSAUclztejNsDIrhMocalyHALBpLGHUyVfPRo&callback=DennysFunction";
+      console.log(myScript.src);
+      document.body.appendChild(myScript);
+      }
+      function DennysFunction(songSearchdata){
+      console.log(songSearchdata);
+        let myImg = document.createElement("img");
+          myImg.src=songSearchdata.data.results[0].thumb;
+          document.body.appendChild(myImg);
+        let myData = document.createElement("div");
+          myData.innerHTML = songSearchdata.data.results[0].year + " " + songSearchdata.data.results[0].title;
+          document.body.appendChild(myData);
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</html>
