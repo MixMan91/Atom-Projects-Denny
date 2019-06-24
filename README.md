@@ -1,18 +1,25 @@
 # Atom-Projects-Denny
-Here are some items that I have yet to figure out for my project:
+List of know bugs:
 
-1) I have yet to figure out how to utilize an API feature in my web page.
-The thought pattern was to use it to drive a search engine for finding music
-data. For now, I have only placed in a SEARCH Button that links to Discogs.com.
-I realize that this is not the objective, but the thought was for my API to be
-used in this fashion.
+Formatting. There is a problem with the way the format is set up on my imagining
+as far as centering and lining things up the way I want them. To see this correctly
+you either need to put your bowser at full screen or adjust the browser window until
+it looks right. You know you have it when the there are two small images on the left
+and right lined up on top of each other.
 
-2) I was successful in creating a Entry Block System to request (Name, Event
-  date, & email address), but when it comes to the information entered, it will
-  not populate that entries into the email that pops up after sending. The Button
-  does open up my email to send to me, but I need to figure out how to connect
-  those entries in the email.
+Issues:
 
-3) Lastly, for my date entry, you will notice I added a Calendar above the date
-box, the idea was to have that function work inside of the data entry box marked
-"date". But of course, I have no idea how to make that work.
+1) The email button was supposed to be able to have boxes that ask for your name,
+event date, and email address. This was then supposed to put this in a populated
+email that would then just simply be ready to send to me. But I have been yet
+unsuccessful in creating this to happen.
+
+2) Formatting as mentioned above in the bugs. I would like to see this being
+fixed to fit all formats it goes on.
+
+ToDo's:
+
+1) Make a working email retrieval system.
+2) Figure out how to utilize my calendar function to work as tool to check
+available dates.
+3) Formatting, Formatting, Formatting.
