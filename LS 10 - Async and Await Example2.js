@@ -1,6 +1,6 @@
 async function fetch_session() {
   let session = JSON.parse(
-    await $.get("/interface/sessions/1")
+    await $.get("https://patrickmcneill.com/itp/urls.txt")
   );
 
   console.log("Hello " + session.user.name);
