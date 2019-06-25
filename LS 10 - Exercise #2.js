@@ -1,6 +1,6 @@
-async function logFetch(patrickmcneill.com/itp/urls.txt) {
+async function logFetch(url) {
   try {
-    const response = await fetch(patrickmcneill.com/itp/urls.txt);
+    const response = await fetch(url);
     console.log(await response.text());
   }
   catch (err) {
