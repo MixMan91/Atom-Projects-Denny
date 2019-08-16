@@ -2,13 +2,14 @@
 <html>
   <body>
     <script>
-      async function logFetch(www.patrickmcneill.com/itp/urls.txt) {
+      async function logFetch(url) {
         try {
-          const response = await fetch(www.patrickmcneill.com/itp/urls.txt);
+          const response = await fetch ("http://www.patrickmcneill.com/itp/urls.txt");
           console.log(await response.text());
         }
         catch (err) {
           console.log('fetch failed', err);
+          console.log (logFetch);
         }
       }
     </script>
